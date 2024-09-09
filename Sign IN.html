@@ -1,0 +1,38 @@
+<html><head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/SIGNUP.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <span class="d-none" id="username"></span>
+
+    <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+            <input id="signUpName" class="form-control my-3"  placeholder="Enter your name" type="text">
+            <input id="signUpEmail" class="form-control my-3"   oninput="validateInputs(this,'msgURL')" placeholder="Enter your email" type="email">
+            <p id="msgURL" class="alert alert-danger p-2 d-none">This email not allow</p>
+            <input id="signUpPassword" class="form-control my-3" oninput="validateInputs(this,'msgName')" placeholder="Enter  password" type="password">
+        
+            <p id="msgName" class="alert alert-danger p-2 d-none">Please enter password correct</p>
+            <div  id="exit"></div>
+            <button id="signBtn" onclick="signUP()" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+            <p class="text-white">You have an account? <a class="text-white" href="New folder/Home.html">Signin</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JavaScript/LogIN.js"></script>
+</body></html>
